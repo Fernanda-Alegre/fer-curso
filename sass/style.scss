@@ -1,0 +1,1995 @@
+$color_1: black;
+$color_2: white;
+$color_3: transparent;
+$font-family_1: "Gayathri", sans-serif;
+$font-family_2: "Federo", sans-serif;
+$background-color_1: #c785b9;
+$background-color_2: #e3d5d5;
+$background-color_3: #E3DAD5;
+$background-color_4: #e3d5d9;
+$background-color_5: #E8E8E8;
+$background-color_6: whitesmoke;
+
+@import "https://fonts.googleapis.com/css2?family=Federo&family=Gayathri:wght@100;400;700&display=swap";
+
+/* MAIN INDEX */
+/* FOTO PORTADA */
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-in-right {
+    0% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-right {
+    0% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background-color_1;
+    font-family: $font-family_1;
+    font-weight: 400;
+}
+
+.body-nosotros {
+    background-image: url(../jeans/logoo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.body-contacto {
+    background-image: url("../jeans/baneers.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.body-ubicacion {
+    background-image: url("../jeans/baneers.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+}
+
+
+.top-header {
+    font-family: $font-family_1;
+    background-color: $background-color_1;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .3125rem;
+    margin: 0%;
+
+    p {
+        margin: 0;
+    }
+}
+
+.sitio-actual {
+    text-decoration: underline;
+}
+
+.navbar1 {
+    background-color: $background-color_2;
+    background: rgba(227, 218, 213, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3.125rem;
+    padding: 0;
+
+    section {
+        a {
+            text-decoration: none;
+            color: $color_1;
+
+            h1 {
+                font-family: $font-family_2;
+                font-size: 2.5rem;
+                text-decoration: none;
+                padding-left: 1.25rem;
+                padding-top: .1875rem;
+            }
+        }
+    }
+
+    ul {
+        font-family: $font-family_1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2.1875rem;
+        padding-right: 1.25rem;
+        margin: 0;
+
+        li {
+            list-style: none;
+
+            a {
+                font-size: 1.25rem;
+                text-decoration: none;
+                color: $color_1;
+                align-content: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.navbar {
+    background-color: $background-color_3;
+}
+
+.navbar-brand {
+    font-family: $font-family_2;
+    font-size: 2.5rem;
+    height: 3.125rem;
+    color: $color_1;
+    padding-top: 0%;
+}
+
+.offcanvas-header {
+    a {
+        text-decoration: none;
+        color: $color_1;
+    }
+}
+
+.offcanvas {
+    background-color: $background-color_3;
+}
+
+main {
+    font-family: $font-family_1;
+    margin-top: 5.4375rem;
+}
+
+.foto-portada {
+    background-image: url(../jeans/imagencompleta.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 37.5rem;
+    background-color: $background-color_3;
+
+    img {
+        width: 80px;
+        overflow: hidden;
+    }
+}
+
+.tres-fotos {
+    background-color: $background-color_3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    div {
+        h2 {
+            font-family: $font-family_1;
+            font-size: 2.1875rem;
+            align-self: center;
+            color: $color_2;
+            margin: 0;
+        }
+    }
+}
+
+.fotoback-polleras {
+    background-image: url(../jeans/pollera\ tajo\ cargo.png);
+    background-position: center;
+    background-size: cover;
+    padding: 15rem;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.fotoback-jeans {
+    background-image: url(../jeans/pollera\ tajo\ cargo.png);
+    background-position: center;
+    background-size: cover;
+    padding: 15rem;
+    border-radius: 0px 5px 5px 0px;
+    background-image: url(../jeans/chupin\ blanco.jpeg);
+    border-radius: 5px;
+}
+
+.fotoback-camperas {
+    background-image: url(../jeans/pollera\ tajo\ cargo.png);
+    background-position: center;
+    background-size: cover;
+    padding: 15rem;
+    border-radius: 0px 5px 5px 0px;
+    background-image: url(../jeans/campera\ de\ jeans\ oscura.png);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.carrousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color_4;
+    width: 100%;
+    gap: 2.5rem;
+    row-gap: 2.5rem;
+    padding-top: 1.5625rem;
+    padding-bottom: 1.5625rem;
+
+    div {
+        figcaption {
+            font-family: $font-family_1;
+        }
+    }
+}
+
+.carrousel-cards {
+    border-radius: 5%;
+}
+
+.info-compra {
+    background-color: $background-color_5;
+
+    div {
+        p {
+            justify-content: center;
+            text-align: center;
+            font-size: 1.375rem;
+        }
+    }
+}
+
+.icono-refresh {
+    width: 6rem;
+}
+
+.icono-auto {
+    width: 6rem;
+}
+
+.icono-tarjeta {
+    width: 6.25rem;
+}
+
+.main-nosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque-nosotros {
+    background-color: $background-color_3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(227, 218, 213, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    width: 56.25rem;
+    height: 44rem;
+    margin-top: 9.375rem;
+    margin-bottom: 9.375rem;
+    border-radius: 10px;
+    padding: 3.125rem;
+}
+
+.bloque-contacto {
+    background-color: $background-color_3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(227, 218, 213, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    width: 56.25rem;
+    height: 44rem;
+    margin-top: 9.375rem;
+    margin-bottom: 9.375rem;
+    border-radius: 10px;
+    padding: 3.125rem;
+    background: rgba(227, 218, 213, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    padding: 0;
+}
+
+.bloque-ubicacion {
+    background-color: $background-color_3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(227, 218, 213, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    width: 56.25rem;
+    height: 44rem;
+    margin-top: 9.375rem;
+    margin-bottom: 9.375rem;
+    border-radius: 10px;
+    padding: 3.125rem;
+    height: 900px;
+
+    .ubicacion-titulo {
+        h2 {
+            font-weight: 500;
+        }
+    }
+}
+
+.nosotros-crueltyfree {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-fieldset {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: wrap;
+    justify-content: none;
+    align-items: none;
+    background-color: $background-color_3;
+    font-size: 1.4375rem;
+    padding: 3.125rem;
+    gap: 1.875rem;
+    border-radius: 10px;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: none;
+    align-items: none;
+    gap: .3125rem;
+
+    .celdas1 {
+        border: .0625rem;
+    }
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: none;
+    align-items: none;
+    gap: .3125rem;
+
+    .celdas1 {
+        border: .0625rem;
+    }
+}
+
+.celda-mensaje {
+    border: .0625rem;
+    width: 17.625rem;
+    height: 18rem;
+}
+
+.boton-enviar {
+    input {
+        width: 4.0625rem;
+        height: 2.1875rem;
+        border: 0;
+        border-radius: .3125rem;
+        background-color: $background-color_6;
+        padding-top: .3125rem;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.main-ubicacion {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-ubicacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background-color_5;
+    padding: .625rem;
+    width: 100%;
+
+    .filtros1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: none;
+        align-items: center;
+        padding-left: 1.25rem;
+        gap: 1.25rem;
+
+        .filtros1-b {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: none;
+            align-items: none;
+            gap: .625rem;
+        }
+
+        h2 {
+            padding-top: .625rem;
+            margin: 0;
+        }
+    }
+
+    .filtros2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: none;
+        align-items: none;
+        padding-right: 1.375rem;
+    }
+}
+
+.tienda-completa {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.875rem;
+    gap: 1.25rem;
+}
+
+.tienda-nombreyprecios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: none;
+}
+
+.imgs-tienda {
+    border-radius: 5%;
+}
+
+.select-filtros {
+    width: 6.25rem;
+    border-radius: .3125rem;
+    background-color: $background-color_6;
+    border: 0;
+    padding-top: .3125rem;
+    align-items: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.select-ordenar {
+    width: 7.5rem;
+    border-radius: .3125rem;
+    background-color: $background-color_6;
+    border: 0;
+    padding-top: .3125rem;
+    align-items: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: none;
+    font-family: $font-family_1;
+    background-color: $background-color_5;
+    text-decoration: none;
+    padding: 3.125rem;
+    margin-top: .625rem;
+
+    div {
+        h4 {
+            font-size: 1.25rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+    }
+}
+
+.preguntas-footer {
+    gap: 3.125rem;
+
+    a {
+        text-decoration: none;
+        color: $color_1;
+    }
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: none;
+    align-items: none;
+    gap: 3.125rem;
+}
+
+.footer-iconos {
+    a {
+        text-decoration: none;
+        appearance: none;
+        color: $color_3;
+    }
+}
+
+.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.fade-in-left {
+    -webkit-animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.fade-in-right {
+    -webkit-animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@media screen and (min-width: 320px) {
+    main {
+        margin-top: 4.125rem;
+    }
+
+    .navbar1 {
+        display: none;
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        ul {
+            display: none;
+        }
+    }
+
+    .foto-portada {
+        width: 100%;
+        height: 220px;
+    }
+
+    .tres-fotos {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding-top: 6px;
+        width: 100%;
+    }
+
+    .fotoback-polleras {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .fotoback-jeans {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .fotoback-camperas {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    section {
+        div {
+            h2 {
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .carrousel {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .flecha-izq {
+        display: none;
+    }
+
+    .flecha-der {
+        display: none;
+    }
+
+    .card-camperas {
+        display: none;
+    }
+
+    .card-jeans {
+        display: none;
+    }
+
+    .card-polleras {
+        display: none;
+    }
+
+    .card-camaperas {
+        display: none;
+    }
+
+    .info-compra {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: none;
+        gap: 5px;
+    }
+
+    .icono-refresh {
+        width: 56px;
+    }
+
+    .icono-auto {
+        width: 56px;
+        width: 56px;
+    }
+
+    .icono-tarjeta {
+        width: 56px;
+    }
+
+    .celda-mensaje {
+        width: 224px;
+        height: 250px;
+        width: 14rem;
+        height: 15.625rem;
+    }
+
+    .filtros {
+        margin-top: 30px;
+        width: 100%;
+
+        .filtros1 {
+            h2 {
+                display: none;
+            }
+
+            .filtros1-b {
+                display: none;
+            }
+        }
+    }
+
+    .filtros1-a {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bloque-nosotros {
+        width: 18.75rem;
+        height: 93.75rem;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bloque-contacto {
+        width: 18.75rem;
+        height: 93.75rem;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 18.75rem;
+        height: 50rem;
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
+        gap: .625rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bloque-ubicacion {
+        width: 18.75rem;
+        height: 93.75rem;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 17.5rem;
+        height: 50rem;
+        padding: 10px;
+    }
+
+    .celdas1 {
+        width: 14rem;
+    }
+
+    .contacto-fieldset {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 15.625rem;
+        height: 37.5rem;
+        font-size: 18px;
+        padding: 0;
+        background-color: $background-color_3;
+        gap: 30px;
+    }
+
+    .ubicacion-mapa-grande {
+        display: none;
+    }
+
+    .ubicacion-mapa-chico {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    main {
+        margin-top: 4.125rem;
+    }
+
+    .navbar1 {
+        display: none;
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        ul {
+            display: none;
+        }
+    }
+
+    .foto-portada {
+        width: 100%;
+        height: 200px;
+    }
+
+    .tres-fotos {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding-top: 6px;
+        width: 100%;
+    }
+
+    .fotoback-polleras {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .fotoback-jeans {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .fotoback-camperas {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    section {
+        div {
+            h2 {
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .carrousel {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .flecha-izq {
+        display: none;
+    }
+
+    .flecha-der {
+        display: none;
+    }
+
+    .card-camaperas {
+        display: none;
+        display: none;
+    }
+
+    .card-jeans {
+        display: none;
+        display: none;
+    }
+
+    .info-compra {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: none;
+        gap: 5px;
+    }
+
+    .icono-refresh {
+        width: 56px;
+    }
+
+    .icono-auto {
+        width: 56px;
+        width: 56px;
+    }
+
+    .icono-tarjeta {
+        width: 56px;
+    }
+
+    .celda-mensaje {
+        width: 14rem;
+        height: 15.625rem;
+    }
+
+    .celdas1 {
+        width: 14rem;
+    }
+
+    .filtros {
+        margin-top: 30px;
+        width: 100%;
+
+        .filtros1 {
+            h2 {
+                display: none;
+            }
+
+            .filtros1-b {
+                display: none;
+            }
+        }
+    }
+
+    .filtros1-a {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bloque-nosotros {
+        width: 18.75rem;
+        height: 93.75rem;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bloque-contacto {
+        width: 18.75rem;
+        height: 93.75rem;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 18.75rem;
+        height: 50rem;
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
+        gap: .625rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bloque-ubicacion {
+        width: 18.75rem;
+        height: 93.75rem;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 17.5rem;
+        height: 50rem;
+        padding: 10px;
+
+        .ubicacion-titulo {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .contacto-fieldset {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 15.625rem;
+        font-size: 18px;
+        padding: 0rem;
+        background-color: $background-color_3;
+        gap: 30px;
+    }
+
+    .ubicacion-mapa-grande {
+        display: none;
+    }
+
+    .ubicacion-mapa-chico {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    main {
+        margin-top: 4.125rem;
+    }
+
+    .navbar1 {
+        display: none;
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        ul {
+            display: none;
+        }
+    }
+
+    .foto-portada {
+        width: 100%;
+        height: 220px;
+    }
+
+    .tres-fotos {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding-top: 6px;
+        width: 100%;
+    }
+
+    .fotoback-polleras {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .fotoback-jeans {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .fotoback-camperas {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    section {
+        div {
+            h2 {
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .carrousel {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .flecha-izq {
+        display: none;
+    }
+
+    .flecha-der {
+        display: none;
+    }
+
+    .card-camperas {
+        display: none;
+        display: none;
+    }
+
+    .card-jeans {
+        display: none;
+        display: none;
+    }
+
+    .info-compra {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-iconos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: none;
+        gap: 5px;
+    }
+
+    .icono-refresh {
+        width: 56px;
+    }
+
+    .icono-auto {
+        width: 56px;
+        width: 56px;
+    }
+
+    .icono-tarjeta {
+        width: 56px;
+    }
+
+    .celda-mensaje {
+        width: 14rem;
+        height: 15.625rem;
+    }
+
+    .celdas1 {
+        width: 14rem;
+    }
+
+    .filtros {
+        margin-top: 30px;
+        width: 100%;
+
+        .filtros1 {
+            h2 {
+                display: none;
+            }
+
+            .filtros1-b {
+                display: none;
+            }
+        }
+    }
+
+    .filtros1-a {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bloque-nosotros {
+        width: 18.75rem;
+        height: 93.75rem;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bloque-contacto {
+        width: 18.75rem;
+        height: 93.75rem;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 18.75rem;
+        height: 50rem;
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
+        gap: .625rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bloque-camperas {
+        width: 18.75rem;
+        height: 93.75rem;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bloque-ubicacion {
+        width: 17.5rem;
+        height: 50rem;
+        padding: 10px;
+
+        .ubicacion-titulo {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .contacto-fieldset {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 15.625rem;
+        font-size: 18px;
+        padding: 0rem;
+        background-color: $background-color_3;
+        gap: 30px;
+    }
+
+    .ubicacion-mapa-grande {
+        display: none;
+    }
+
+    .ubicacion-mapa-chico {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    main {
+        margin-top: 4.125rem;
+    }
+
+    .foto-portada {
+        width: 100%;
+        height: 18.75rem;
+    }
+
+    .navbar1 {
+        section {
+            a {
+                h1 {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        ul {
+            display: none;
+        }
+    }
+
+    .tres-fotos {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding-top: 6px;
+    }
+
+    .fotoback-polleras {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .fotoback-jeans {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .fotoback-camperas {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .fotoback-polerras {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .carrousel {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .flecha-izq {
+        display: none;
+    }
+
+    .flecha-der {
+        display: none;
+    }
+
+    .card-camperas {
+        display: none;
+        display: none;
+    }
+
+    .card-jean {
+        display: none;
+    }
+
+    .card-botas {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: .3125rem;
+        padding: 1.25rem;
+    }
+
+    .footer-1 {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5625rem;
+    }
+
+    .icono-refresh {
+        width: 4.75rem;
+    }
+
+    .icono-auto {
+        width: 4.75rem;
+        width: 4.75rem;
+    }
+
+    .icono-tarjeta {
+        width: 4.75rem;
+    }
+
+    .bloque-contacto {
+        width: 37.5rem;
+        height: 46.875rem;
+        margin-top: 4.375rem;
+        margin-bottom: 4.375rem;
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+        height: 62.5rem;
+        margin-top: 4.375rem;
+        margin-bottom: 4.375rem;
+        padding: 1.875rem;
+    }
+
+    .contacto-fieldset {
+        width: 18.75rem;
+        height: 43.75rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1875rem;
+        background-color: $background-color_3;
+        gap: 1.875rem;
+    }
+
+    .filtros {
+        margin-top: 1.875rem;
+        width: 100%;
+
+        .filtros1 {
+            h2 {
+                display: none;
+            }
+
+            .filtros1-b {
+                display: none;
+            }
+        }
+    }
+
+    .filtros1-a {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bloque-nosotros {
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+        height: 62.5rem;
+        margin-top: 4.375rem;
+        margin-bottom: 4.375rem;
+        padding: 1.875rem;
+    }
+
+    .bloque-ubicacion {
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+        height: 62.5rem;
+        margin-top: 4.375rem;
+        margin-bottom: 4.375rem;
+        padding: 1.875rem;
+        width: 25rem;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .contenido-ubicaicon {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ubicacion-mapa-grande {
+        display: none;
+    }
+
+    .ubicacion-mapa-chico {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin-top: 4.125rem;
+    }
+
+    .foto-portada {
+        width: 100%;
+        height: 18.75rem;
+    }
+
+    .navbar1 {
+        section {
+            a {
+                h1 {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        ul {
+            display: none;
+        }
+    }
+
+    .tres-fotos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fotoback-polleras {
+        padding: 6.6875rem;
+        border-radius: 0 5px 5px 0;
+        padding: 6.6875rem;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .fotoback-jeans {
+        padding: 6.6875rem;
+        border-radius: 0 5px 5px 0;
+        display: none;
+    }
+
+    .fotoback-camperas {
+        padding: 6.6875rem;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .carrousel {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        gap: .3125rem;
+        row-gap: .125rem;
+    }
+
+    .flecha-izq {
+        visibility: visible;
+    }
+
+    .flecha-der {
+        visibility: visible;
+    }
+
+    .card-camaperas {
+        display: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-jeans {
+        display: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: .3125rem;
+        padding: 1.25rem;
+    }
+
+    .footer-1 {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5625rem;
+    }
+
+    .icono-refresh {
+        width: 4.75rem;
+    }
+
+    .icono-auto {
+        width: 4.75rem;
+        width: 4.75rem;
+    }
+
+    .icono-tarjeta {
+        width: 4.75rem;
+    }
+
+    .bloque-contacto {
+        width: 37.5rem;
+        height: 50rem;
+        margin-top: 4.375rem;
+        margin-bottom: 4.375rem;
+        width: 37.5rem;
+        height: 50rem;
+        margin-top: 4.375rem;
+        margin-bottom: 4.375rem;
+    }
+
+    .contacto-fieldset {
+        width: 25rem;
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1875rem;
+        background-color: $background-color_3;
+        gap: 1.875rem;
+    }
+
+    .filtros {
+        margin-top: 1.875rem;
+        width: 100%;
+
+        .filtros1 {
+            h2 {
+                display: none;
+            }
+
+            .filtros1-b {
+                display: none;
+            }
+        }
+    }
+
+    .filtros1-a {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bloque-nosotros {
+        width: 37.5rem;
+        height: 50rem;
+        margin-top: 4.375rem;
+        margin-bottom: 4.375rem;
+    }
+
+    .bloque-ubicacion {
+        width: 37.5rem;
+        height: 50rem;
+        margin-top: 4.375rem;
+        margin-bottom: 4.375rem;
+        width: 40.625rem;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .contenido-ubicaicon {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ubicacion-mapa-grande {
+        display: flex;
+    }
+
+    .ubicacion-mapa-chico {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        margin-top: 5.4375rem;
+    }
+
+    .foto-portada {
+        width: 100%;
+        height: 23.75rem;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar1 {
+        display: flex;
+
+        ul {
+            display: flex;
+        }
+    }
+
+    .tres-fotos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fotoback-polleras {
+        padding: 6rem;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .fotoback-jeans {
+        padding: 6rem;
+        border-radius: 0 5px 5px 0;
+        display: flex;
+        padding: 6rem;
+        border-radius: 5px;
+    }
+
+    .fotoback-camperas {
+        padding: 6rem;
+        border-radius: 0 5px 5px 0;
+        padding: 6rem;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .flecha-izq {
+        display: flex;
+    }
+
+    .flecha-der {
+        display: flex;
+    }
+
+    .card-jeans {
+        display: none;
+        display: none;
+    }
+
+    .card-camaperas {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icono-refresh {
+        width: 5.375rem;
+    }
+
+    .icono-auto {
+        width: 5.375rem;
+        width: 5.375rem;
+    }
+
+    .icono-tarjeta {
+        width: 5.375rem;
+    }
+
+    .bloque-contacto {
+        width: 56.25rem;
+        height: 62.5rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 56.25rem;
+        height: 37.5rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .contacto-fieldset {
+        width: auto;
+        height: auto;
+        font-size: 1.4375rem;
+        padding: 3.125rem;
+        background-color: $background-color_3;
+        display: flex;
+        flex-direction: row;
+        gap: 1.875rem;
+    }
+
+    .celda-mensaje {
+        width: auto;
+        height: 18rem;
+    }
+
+    .celdas1 {
+        width: auto;
+    }
+
+    .filtros {
+        margin-top: 0;
+
+        .filtros1 {
+            h2 {
+                display: flex;
+            }
+
+            .filtros1-b {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .filtros1-a {
+                display: none;
+            }
+        }
+    }
+
+    .boton-filtros-solo {
+        display: none;
+    }
+
+    .bloque-nosotros {
+        width: 56.25rem;
+        height: 37.5rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .bloque-ubicacion {
+        width: 56.25rem;
+        height: 37.5rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-wrap: nowrap;
+        height: 43.75rem;
+    }
+
+    .ubicacion-mapa-grande {
+        display: flex;
+    }
+
+    .ubicacion-mapa-chico {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .foto-portada {
+        width: 100%;
+        height: 31.25rem;
+    }
+
+    .tres-fotos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fotoback-polleras {
+        padding: 10.3125rem;
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    .fotoback-jeans {
+        padding: 10.3125rem;
+        border-radius: 0px 5px 5px 0px;
+        padding: 10.3125rem;
+        border-radius: 5px;
+    }
+
+    .fotoback-camperas {
+        padding: 10.3125rem;
+        border-radius: 0px 5px 5px 0px;
+        padding: 10.3125rem;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .card-jeans {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloque-contacto {
+        width: 75rem;
+        height: 62.5rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 75rem;
+        height: 43.75rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .contacto-fieldset {
+        width: auto;
+        height: auto;
+        font-size: 1.4375rem;
+        padding: 3.125rem;
+        background-color: $background-color_3;
+        display: flex;
+        flex-direction: row;
+        gap: 1.875rem;
+    }
+
+    .filtros1-b {
+        display: flex;
+    }
+
+    .bloque-nosotros {
+        width: 75rem;
+        height: 43.75rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .bloque-ubicacion {
+        width: 75rem;
+        height: 43.75rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .ubicacion-mapa-grande {
+        display: flex;
+    }
+
+    .ubicacion-mapa-chico {
+        display: none;
+    }
+}

@@ -1,0 +1,183 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Femme fashion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  
+    <!-- Empieza el HEADER -->
+    <header>
+      <div class="top-header">
+          <p>ENVÍOS GRATIS A PARTIR DE 20000$</p>
+      </div>
+
+      <!--OFFCANVAS NAVBAR EMPIEZA-->
+      <nav class="navbar fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Femme-Fashion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                  <a href="../index.html"> <h5 class="offcanvas-title" id="offcanvasNavbarLabel">INICIO</h5> </a>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../page/jeans.html">Jeans</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../page/camperas.html">Camperas</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../page/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../page/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">CARRITO</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">CUENTA</a>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+      <!--NAVBAR1-->
+      <nav class="navbar1">
+          <section>
+              <a href="../index.html"> <h1>Femme-Fashion</h1> </a>
+          </section>
+          <ul>
+              <li class="sitio-actual"> <a href="jeans.html">jeans</a> </li>
+              <li> <a href="./camperas.html">Camaperas</a> </li>
+              <li> <a href="./nosotros.html">Nosotros</a> </li>
+              <li> <a href="./contacto.html">Contacto</a> </li>
+              <li> <a href="./ubicacion.html">ubicacion</a> </li>
+              <li> <a href="#"> <!--BUSCADOR--> <img src="" alt=""> </a> </li>
+              <li> <a href="#"> <!--CARRITO--> <img src="" alt=""> </a> </li>
+              <li> <a href="#"> <!--CUENTA--> <img src="" alt=""> </a> </li>
+          </ul>
+      </nav>
+  </header>
+
+  <!--Empieza el MAIN-->
+  <main>
+      <div class="filtros">
+          <div class="filtros1">
+              <h2>FILTRAR</h2>
+              <div class="filtros1-a">
+                  <select class="select-filtros" name="filtrar">
+                      <option value="prenda" selected disabled>Filtrar</option>
+                      <option value="prenda">Prenda</option>
+                      <option value="color">Color</option>
+                      <option value="talle">Talle</option>
+                  </select> 
+              </div>
+              <div class="filtros1-b">
+                  <select class="select-filtros" name="prenda">
+                      <option value="prenda" selected disabled>Prenda</option>
+                      <option value="tapados">Tapados</option>
+                      <option value="jeans">Jeans</option>
+                      <option value="sweaters">Sweaters</option>
+                  </select>
+                  <select class="select-filtros" name="color">
+                      <option value="prenda" selected disabled>Color</option>
+                      <option value="blanco">Blanco</option>
+                      <option value="beige">Beige</option>
+                      <option value="rosa">Rosa</option>
+                  </select>
+                  <select class="select-filtros" name="talle">
+                      <option value="prenda" selected disabled>Talle</option>
+                      <option value="talle-s">S</option>
+                      <option value="talle-m">M</option>
+                      <option value="talle-l">L</option>
+                  </select>
+              </div>
+          </div>
+          <div class="filtros2">
+              <select class="select-ordenar" name="ordenar">
+                  <option value="prenda" selected disabled>Ordenar por</option>
+                  <option value="mas-reciente">Más Reciente</option>
+                  <option value="menor-precio">Menor precio</option>
+                  <option value="mayor-precio">Mayor precio</option>
+              </select>
+          </div>
+      </div>
+      <div class="tienda-completa">
+          <div>
+              <img class="imgs-tienda img-fluid" src="../jeans/Chaqueta Mom Cielo 1.png" alt=""> 
+              <div class="tienda-nombreyprecios"> <figcaption>Chaqueta Mom Cielo</figcaption> <figcaption>4980$</figcaption> </div>
+          </div>
+          <div>
+              <img class="imgs-tienda img-fluid" src="../jeans/short lazo.png" alt=""> 
+              <div class="tienda-nombreyprecios"> <figcaption>short lazo </figcaption> <figcaption>20990$</figcaption> </div>
+          </div>
+          <div>
+              <img class="imgs-tienda img-fluid" src="../jeans/jeans cargo wide.png" alt=""> 
+              <div class="tienda-nombreyprecios"> <figcaption>jean cargo wide</figcaption> <figcaption>18700$</figcaption> </div>
+          </div>
+          <div>
+              <img class="imgs-tienda img-fluid" src="../jeans/pollera tajo.png" alt=""> 
+              <div class="tienda-nombreyprecios"> <figcaption>pollera tajo</figcaption> <figcaption>10600$</figcaption> </div>
+          </div>
+          <div>
+              <img class="imgs-tienda img-fluid" src="../jeans/DSC_0142-PhotoRoom.png-PhotoRoom (1).png" alt=""> 
+              <div class="tienda-nombreyprecios"> <figcaption>jeans</figcaption> <figcaption>12800$</figcaption> </div>
+          </div>
+          <div>
+              <img class="imgs-tienda img-fluid" src="../jeans/DSC_0292-600x883-PhotoRoom.png-PhotoRoom (1).png" alt=""> 
+              <div class="tienda-nombreyprecios"> <figcaption>Jean Blanco</figcaption> <figcaption>11700$</figcaption> </div>
+          </div>
+      </div>
+  </main>
+
+  <!-- Empieza el FOOTER -->
+  <footer>
+      <div>
+          <h4>Preguntas Frecuentes</h4>
+          <br>
+          <ul class="footer-1">
+              <div>
+                  <li class="preguntas-footer"> <a href="">Métodos de pago</a> </li>
+                  <li class="preguntas-footer"> <a href="">Cambios</a> </li>
+              </div>
+              <div>
+                  <li class="preguntas-footer"> <a href="./pages/contacto.html">Contacto</a> </li>
+                  <li class="preguntas-footer"> <a href="">Devoluciones</a> </li>
+              </div>
+              <div>
+                  <li class="preguntas-footer"> <a href="">Venta mayorista</a> </li>
+                  <li class="preguntas-footer"> <a href="">Tabla de talles</a> </li>
+              </div>
+              </ul>
+      </div>
+      <div class="footer-iconos">
+          <a href=""> <img src="../jeans/instagram 2.png" alt=""> </a>
+          <a href=""> <img src="../jeans/facebook.png" alt=""> </a>
+          <a href=""> <img src="../jeans/whatsapp.png" alt=""> </a>
+      </div>
+    
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
