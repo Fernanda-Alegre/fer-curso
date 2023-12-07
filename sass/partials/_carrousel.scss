@@ -1,0 +1,21 @@
+.carrousel {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: $background-color_4;
+	width: 100%;
+	gap: 2.5rem;
+	row-gap: 2.5rem;
+	padding-top: 1.5625rem;
+	padding-bottom: 1.5625rem;
+	div {
+		figcaption {
+			font-family: $font-family_1;
+		}
+	}
+}
+.carrousel-cards {
+	border-radius: 5%;
+}

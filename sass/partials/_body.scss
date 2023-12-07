@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+	font-weight: 400;
+}
+.body-nosotros {
+	background-image: url(../jeans/logoo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.body-contacto {
+	background-image: url("../jeans/baneers.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.body-ubicacion {
+	background-image: url("../jeans/baneers.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;

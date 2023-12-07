@@ -1,0 +1,145 @@
+header {
+	position: fixed;
+	top: 0;
+	z-index: 4;
+	width: 100%;
+}
+.top-header {
+	font-family: $font-family_1;
+	background-color: $background-color_1;
+	text-align: center;
+	padding-top: .5rem;
+	padding-bottom: .3125rem;
+	margin: 0%;
+	p {
+		margin: 0;
+	}
+}
+.navbar1 {
+	background-color: $background-color_2;
+	background: rgba(227, 218, 213, 0.7);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(9.8px);
+	-webkit-backdrop-filter: blur(9.8px);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 3.125rem;
+	padding: 0;
+	section {
+		a {
+			text-decoration: none;
+			color: $color_1;
+			h1 {
+				font-family: $font-family_2;
+				font-size: 2.5rem;
+				text-decoration: none;
+				padding-left: 1.25rem;
+				padding-top: .1875rem;
+			}
+		}
+	}
+	ul {
+		font-family: $font-family_1;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 2.1875rem;
+		padding-right: 1.25rem;
+		margin: 0;
+		li {
+			list-style: none;
+			a {
+				font-size: 1.25rem;
+				text-decoration: none;
+				color: $color_1;
+				align-content: center;
+				justify-content: center;
+			}
+		}
+	}
+}
+.navbar {
+	background-color: $background-color_3;
+}
+.navbar-brand {
+	font-family: $font-family_2;
+	font-size: 2.5rem;
+	height: 3.125rem;
+	color: $color_1;
+	padding-top: 0%;
+}
+.offcanvas-header {
+	a {
+		text-decoration: none;
+		color: $color_1;
+	}
+}
+.offcanvas {
+	background-color: $background-color_3;
+}
+main {
+	font-family: $font-family_1;
+	margin-top: 5.4375rem;
+}
+.foto-portada {
+	background-image: url(../jeans/imagencompleta.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	width: 80%;
+	height: 37.5rem;
+	background-color: $background-color_3;
+	img {
+		width: 80px;
+		overflow: hidden;
+	}
+}
+.tres-fotos {
+	background-color: $background-color_3;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	div {
+		h2 {
+			font-family: $font-family_1;
+			font-size: 2.1875rem;
+			align-self: center;
+			color: $color_2;
+			margin: 0;
+		}
+	}
+}
+.fotoback-polleras {
+	background-image: url(../jeans/pollera\ tajo\ cargo.png);
+	background-position: center;
+	background-size: cover;
+	padding: 15rem;
+	border-radius: 0px 5px 5px 0px;
+}
+.fotoback-jeans {
+	background-image: url(../jeans/pollera\ tajo\ cargo.png);
+	background-position: center;
+	background-size: cover;
+	padding: 15rem;
+	border-radius: 0px 5px 5px 0px;
+	background-image: url(../jeans/chupin\ blanco.jpeg);
+	border-radius: 5px;
+}
+.fotoback-camperas {
+	background-image: url(../jeans/pollera\ tajo\ cargo.png);
+	background-position: center;
+	background-size: cover;
+	padding: 15rem;
+	border-radius: 0px 5px 5px 0px;
+	background-image: url(../jeans/campera\ de\ jeans\ oscura.png);
+	border-radius: 5px 0px 0px 5px;
+}
